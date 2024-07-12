@@ -9,6 +9,8 @@
           var result = '',resultAll="",data = resdata
           for(var i=0;i < data.length;i++){
               var galleryTitle = data[i].content.replace("#相册 ",'')
+              var titleLength = galleryTitle.length; // 获取标题长度
+              galleryTitle = galleryTitle.slice(0, Math.min(20, titleLength)); // 只保留前20个字符
               var imgs = galleryTitle.match(/\!\[(.*?)\s*(.*?)\]\((.*?)\)/g)
               //解析 content 内 md 格式图片
               if(imgs){
