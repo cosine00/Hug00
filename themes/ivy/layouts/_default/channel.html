@@ -1,0 +1,36 @@
+{{ partial "header.html" . }}
+
+<!-- Import Libraries -->
+<script src="https://unpkg.com/vue@3"></script>
+<script src="https://unpkg.com/tg-blog"></script>
+<link rel="stylesheet" href="https://unpkg.com/tg-blog/dist/style.css">
+
+<!-- Styles & Patches -->
+<style>
+    #tg-blog-app { font-family: Avenir, Helvetica, Arial, sans-serif }
+
+    /* Fix for potential theme conflicts */
+    #tg-blog-app img { max-width: unset; }
+    .container { overflow-x: unset !important; }
+    body { overflow-x: unset !important; }
+</style>
+
+<!-- Template setup (Paste your data url here) -->
+<div id="tg-blog-app">
+    <tg-blog posts-url="YOUR-POSTS-URL-HERE"></tg-blog>
+</div>
+
+<!-- Vue js setup -->
+<script>
+const app = Vue.createApp().component("tg-blog", TgBlog.TgBlog)
+app.mount('#tg-blog-app')
+
+// Destroy app when page switched
+const interval = setInterval(() => {
+    if (!document.getElementById('tg-blog-app')) 
+    {
+        app.unmount()
+        clearInterval(interval)
+    }
+}, 1000)
+</script>
