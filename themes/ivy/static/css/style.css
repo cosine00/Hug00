@@ -9,7 +9,7 @@ html {
 
 body {
   /* Screen version */
-  font-family: "Source Han Serif CN","LXGW WenKai Screen", sans-serif;
+  font-family: inherit;
 }
 
 *, *:before, *:after {
