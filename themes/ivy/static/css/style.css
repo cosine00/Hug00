@@ -9,7 +9,7 @@ html {
 
 body {
   /* Screen version */
-  font-family: inherit;
+  font-family: "LXGW WenKai Screen", sans-serif;
 }
 
 *, *:before, *:after {
@@ -632,4 +632,3 @@ figure img{max-width:100%;border-radius:0;display: inline-block;margin-block-sta
 	.db-card-comment{display: none;}
 }
 /* db-card -------- edn */
-
