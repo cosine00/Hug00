@@ -7,9 +7,13 @@ html {
   box-sizing: border-box;
 }
 
+* {
+  font-weight: 400 !important;
+}
+
 body {
   /* Screen version */
-  font-family: "LXGW WenKai Screen", sans-serif;
+  font-family: 'Noto Serif SC', "LXGW WenKai Screen", sans-serif;
 }
 
 *, *:before, *:after {
