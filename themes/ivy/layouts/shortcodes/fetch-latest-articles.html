@@ -1,0 +1,10 @@
+{{ $rss := "https://clip.hux.ink/feed.xml" }}
+{{ $response := getJSON $rss }}
+
+<ul>
+{{ range first 20 $response.items }}
+    <li>
+        <a href="{{ .link }}">{{ .title }}</a>
+    </li>
+{{ end }}
+</ul>
