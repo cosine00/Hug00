@@ -15,7 +15,7 @@
   <channel>
     <title>Counting Stars💫</title>
     <link>{{ .Permalink }}</link>
-    <description>feedId:54825248999897094+userId:55795484844839936</description>
+    <description>花有重开日，人无再少年</description>
     <generator>Hugo -- gohugo.io</generator>{{ with .Site.LanguageCode }}
     <language>{{.}}</language>{{end}}{{ with .Site.Author.email }}
     <managingEditor>{{.}}{{ with $.Site.Author.name }} ({{.}}){{end}}</managingEditor>{{end}}{{ with .Site.Author.email }}
