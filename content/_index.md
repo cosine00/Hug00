@@ -6,4 +6,6 @@ title: Home
 
 ---
 
+{{< memos >}}
+
 ## 近期记录
