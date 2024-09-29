@@ -13,7 +13,7 @@
 <ul>
   {{ range (where ($.Scratch.Get "pages") "Section" "posts") }}
   <li>
-    <span class="date">{{ .Date.Format "2006/01/02" }}</span>
+    <span class="date">{{ .Date.Format "2006/01/02" }}</span>&nbsp;&nbsp;&nbsp;
     <a href="{{ .RelPermalink }}">{{ .Title }}</a>
   </li>
   {{ end }}
