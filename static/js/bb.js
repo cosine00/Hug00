@@ -242,6 +242,21 @@ function getNextList(apiV1){
     }
   })
 }
+//加载总 Memos 数
+function meNums(apiV1){
+  let bbLoad = document.querySelector('.bb-load')
+  let bbUrl = memos+"api/"+apiV1+"memo/stats?creatorId="+bbMemo.creatorId
+  fetch(bbUrl).then(res => res.json()).then( resdata =>{
+    let arrData = resdata || ''
+    if(resdata.data){
+      arrData = resdata.data
+    }
+    if(arrData){
+      let allnums = `<div id="bb-footer"><p class="bb-allnums"></p><p class="bb-allpub"></p></div>`
+      bbLoad.insertAdjacentHTML('afterend', allnums);
+    }
+  })
+}
 // 插入 html 
 async function updateHTMl(data){
   //console.log(data)
