@@ -6,6 +6,6 @@ title: Home
 
 ---
 
-{{< memos >}}
+<!-- INSERT_MEMO_HERE -->
 
 ## 近期记录
