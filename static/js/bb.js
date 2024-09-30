@@ -494,31 +494,6 @@ function setOpenID(){
   if(memosOpenIdSet !== null ) window.localStorage && window.localStorage.setItem("memos-access-token", memosOpenIdSet);
 }
 
-//归档 Memo
-function archiveMemo(e) {
-  let memoId = e.getAttribute("data-id")
-  let memosOpenIdNow = window.localStorage && window.localStorage.getItem("memos-access-token");
-  if(memosOpenIdNow && memosOpenIdNow !== 'undefined' && memoId){
-    let isOk = confirm("确认归档？");
-    if(isOk){
-      let memoUrl = memos+"api/"+apiV1+"memo/"+memoId+"?openId="+memosOpenIdNow
-      let memoBody = {id:memoId,rowStatus:"ARCHIVED"};
-      fetch(memoUrl, {
-        method: 'PATCH',
-        body: JSON.stringify(memoBody),
-        headers: {
-          'Content-Type': 'application/json'
-        }
-      }).then(function(res) {
-        if (res.ok) {
-          reLoad()
-        }
-      })
-    }
-  }else{
-    setOpenID()
-  }
-}
 
 //显示标签列表，需配合 cloudflare worker 食用
 function showTaglist(e){
