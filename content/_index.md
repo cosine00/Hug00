@@ -8,4 +8,3 @@ title: Home
 
 <!-- INSERT_MEMO_HERE -->
 
-## 近期记录
