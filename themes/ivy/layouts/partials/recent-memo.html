@@ -21,7 +21,7 @@
 .timeline ul {margin:0;}
 .timeline ul li {background:#3b3d42;list-style-type:none;position:relative;width:3px;margin-left:1em;padding:0.8em 0 2em;}
 .timeline ul li::after {transform: rotate(45deg);content:'';background-color: #3b3d42;display: block;position: absolute;top: 10px;left: -5px;width: 0.8em;height: 0.8em;outline:15px solid #fff;}
-.timeline ul li .itemdiv {position:relative;top:-13px;left:1em;width:670px;padding:0px 16px 0px;}
+.timeline ul li .itemdiv {position:relative;top:-13px;left:1em;width:670px;padding:0px 16px 0px;max-height: none;box-sizing: border-box;}
 .timeline ul li .datatime,.load button{color: #fafafa;font-size: 0.75em;font-style: italic;background-color: #3b3d42;display: inline-block;padding:4px 12px;}
 .timeline ul li .datacont{margin:0.65em 0 0.3em;}
 .timeline ul li .datacont img[src*="emotion"]{display:inline-block;width:auto;height:auto;}
@@ -39,30 +39,6 @@
 }
 .datacont .tag-span{color: #42b983;}
 .datasource a{font-size: 0.8rem;}
-.datacont a {
-  color: #191919;
-  padding: 2px 0 1px 0;
-  text-decoration: none;
-  background-image: linear-gradient(
-    transparent 0%,
-    transparent calc(50% - 9px),
-    #D1C2D3 calc(50% - 9px),
-    #D1C2D3 100%
-  );
-  transition: background-position 120ms ease-in-out, padding 120ms ease-in-out;
-  background-size: 100% 200%;
-  background-position: 0 0;
-  word-break: break-word;
-}
-
-.datacont a:hover {
-  background-image: linear-gradient(
-    transparent 0%,
-    transparent calc(50% - 9px),
-    #D1C2D3 calc(50% - 9px),
-    #D1C2D3 100%
-  );
-}
 .datacont .img{cursor:pointer;border:1px solid #3b3d42;}
 .datacont .img.square{height:180px;width:180px;object-fit:cover;}
 .resimg.grid{
