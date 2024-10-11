@@ -39,6 +39,30 @@
 }
 .datacont .tag-span{color: #42b983;}
 .datasource a{font-size: 0.8rem;}
+.datacont a {
+  color: #191919;
+  padding: 2px 0 1px 0;
+  text-decoration: none;
+  background-image: linear-gradient(
+    transparent 0%,
+    transparent calc(50% - 9px),
+    #D1C2D3 calc(50% - 9px),
+    #D1C2D3 100%
+  );
+  transition: background-position 120ms ease-in-out, padding 120ms ease-in-out;
+  background-size: 100% 200%;
+  background-position: 0 0;
+  word-break: break-word;
+}
+
+.datacont a:hover {
+  background-image: linear-gradient(
+    transparent 0%,
+    transparent calc(50% - 9px),
+    #D1C2D3 calc(50% - 9px),
+    #D1C2D3 100%
+  );
+}
 .datacont .img{cursor:pointer;border:1px solid #3b3d42;}
 .datacont .img.square{height:180px;width:180px;object-fit:cover;}
 .resimg.grid{
