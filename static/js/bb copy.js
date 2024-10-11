@@ -35,11 +35,11 @@ const allCSS = `
 .bb-timeline .bb-info{position:relative;margin-top:.5rem;font-size:14px;}
 .bb-timeline .bb-info a{text-decoration:none;}
 .bb-timeline .datatime{font-size:15px;}
-.bb-timeline .bb-cont{overflow:visible;margin-top:.5rem;}
+.bb-timeline .bb-cont{overflow-x:hidden;overflow-y:scroll;margin-top:.5rem;max-height:50vh;}
 .bb-timeline .datacount{position:absolute;right:0;bottom:0;cursor:pointer;}
 .bb-timeline .datacount svg{margin:2px 5px;}
 .bb-timeline .bb-cont img[src*=emotion]{display:inline-block;width:auto;}
-.bb-timeline p{margin:0;margin:0;min-height:18px;color:#3b3d42;letter-spacing:1px;line-height:28px;white-space:normal;overflow:visible;}
+.bb-timeline p{margin:0;margin:0;min-height:18px;color:#3b3d42;letter-spacing:1px;line-height:28px;}
 .bb-timeline pre{color:#aaa;}
 .bb-timeline pre p{display:inline-block;}
 .bb-timeline pre p:empty{display:none;}
