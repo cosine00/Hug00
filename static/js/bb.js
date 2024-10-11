@@ -33,8 +33,7 @@ const allCSS = `
 .bb-timeline .bb-item{padding:.6rem 1rem .6rem;font-size:16px;}
 .bb-load button{padding:10px 30px;width:100%;background:0 0;letter-spacing:.8rem;font-style:italic;font-size:.8rem;}
 .bb-timeline .bb-info{position:relative;margin-top:.5rem;font-size:14px;}
-.bb-timeline .bb-info a{color:#191919;padding:2px 0 1px 0;background-image: linear-gradient(transparent 0%,transparent calc(50% - 9px),#CAD3C3 calc(50% - 9px),#CAD3C3 100%);transition:background-position 120ms ease-in-out, padding 120ms ease-in-out;background-size:100% 200%;background-position:0 0;word-break:break-word}
-.bb-timeline .bb-info a:hover{background-position:0 100%;}
+.bb-timeline .bb-info a{text-decoration:none;}
 .bb-timeline .datatime{font-size:15px;}
 .bb-timeline .bb-cont{overflow-x:hidden;overflow-y:scroll;margin-top:.5rem;max-height:50vh;}
 .bb-timeline .datacount{position:absolute;right:0;bottom:0;cursor:pointer;}
