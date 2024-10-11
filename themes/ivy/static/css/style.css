@@ -505,8 +505,8 @@ figure img{max-width:100%;border-radius:0;display: inline-block;margin-block-sta
   background-image: linear-gradient(
     transparent 0%,
     transparent calc(50% - 9px),
-    #6E8B74 calc(50% - 9px),
-    #6E8B74 100%
+    #CAD3C3 calc(50% - 9px),
+    #CAD3C3 100%
   );
   transition: background-position 120ms ease-in-out, padding 120ms ease-in-out;
   background-size: 100% 200%;
@@ -518,8 +518,8 @@ figure img{max-width:100%;border-radius:0;display: inline-block;margin-block-sta
   background-image: linear-gradient(
    transparent 0%,
    transparent calc(50% - 9px),
-   #6E8B74 calc(50% - 9px),
-   #6E8B74 100%
+   #CAD3C3 calc(50% - 9px),
+   #CAD3C3 100%
  );
  background-position: 0 100%;
 }
