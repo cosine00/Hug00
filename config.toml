@@ -47,7 +47,7 @@ footnotereturnlinkcontents = "↩"
 [params]
   # description about this website
   description = "🌩️🌩️🌩️莫思身外无穷事，且尽生前有限杯。"
-  footer = "&copy; [Counting Stars💫](https://hux.ink/) | since 2023"
+  footer = "&copy; [Counting Stars💫](https://hux.ink/) | [Since 2023](https://hux.ink/index.xml)"
   highlightjsCDN = "//cdn.bootcss.com"
   highlightjsLang = ["r", "yaml", "tex"]
   highlightjsTheme = "github"
