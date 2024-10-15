@@ -26,8 +26,8 @@ footnotereturnlinkcontents = "↩"
   url="/album/"
   weight="3"
   [[menu.main]]
-  name="往昔"
-  url="https://news.hux.ink/"
+  name="花园"
+  url="https://clip.hux.ink/"
   weight="4"
   [[menu.main]]
   name="悦动"
