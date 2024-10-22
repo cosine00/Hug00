@@ -1,9 +1,10 @@
 {{ partial "header.html" . }}
 
 {{ $content := .Content }}
-{{ $latestPosts := partial "latest-posts.html" . }}
+{{ $latestPartial := partial "latest-posts.html" . }}
+{{ $content := replace $content "<!-- INSERT_latest-posts_HERE -->" $latestPartial }}
 {{ $memoPartial := partial "recent-memo.html" . }}
-{{ $content := replace $content "<!-- INSERT_MEMO_HERE -->" (printf "%s<!-- INSERT_MEMO_HERE -->" $latestPosts) }}
+{{ $content := replace $content "<!-- INSERT_MEMO_HERE -->" $memoPartial }}
 {{ $content | safeHTML }}
 
 
