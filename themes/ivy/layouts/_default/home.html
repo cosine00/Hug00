@@ -1,19 +1,6 @@
 {{ partial "header.html" . }}
 
 {{ $content := .Content }}
-<div id="latest-posts">
-  <h2>最近记录</h2>
-  <ul>
-    {{ $latestPosts := where .Site.RegularPages "Section" "posts" | first 6 }}
-    {{ range $latestPosts }}
-      <li>
-        <span class="post-date">{{ .Date.Format ($.Site.Params.DateFormatList | default "2006-01-02") }}</span>&nbsp;&nbsp;&nbsp;
-        <a href="{{ .Permalink }}">{{ .Title }}</a>
-      </li>
-    {{ end }}
-  </ul>
-</div>
----
 {{ $memoPartial := partial "recent-memo.html" . }}
 {{ $content := replace $content "<!-- INSERT_MEMO_HERE -->" $memoPartial }}
 {{ $content | safeHTML }}
