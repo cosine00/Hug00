@@ -1,12 +1,36 @@
 <div id="latest-posts">
-    <h2>最近记录</h2>
-    <ul>
-      {{ $latestPosts := where .Site.RegularPages "Section" "posts" | first 6 }}
-      {{ range $latestPosts }}
-        <li>
-          <span class="post-date">{{ .Date.Format ($.Site.Params.DateFormatList | default "2006-01-02") }}</span>&nbsp;&nbsp;&nbsp;
-          <a href="{{ .Permalink }}">{{ .Title }}</a>
-        </li>
-      {{ end }}
-    </ul>
+  <style>
+    #latest-posts {
+      margin: 20px 0;
+    }
+
+    .post-grid {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .post-row {
+      display: flex;
+      width: 100%;
+    }
+
+    .post-item {
+      flex: 1 0 50%; /* 每行两个元素 */
+      box-sizing: border-box;
+      padding: 10px;
+    }
+  </style>
+
+  <div class="post-grid">
+    {{ $latestPosts := where .Site.RegularPages "Section" "posts" | first 6 }}
+    {{ range $index, $post := $latestPosts }}
+      {{ if eq (mod $index 2) 0 }}<div class="post-row">{{ end }}
+        <div class="post-item">
+          <span class="post-date">{{ $post.Date.Format ($.Site.Params.DateFormatList | default "2006-01-02") }}</span>&nbsp;&nbsp;&nbsp;
+          <a href="{{ $post.Permalink }}">{{ $post.Title }}</a>
+        </div>
+      {{ if eq (mod $index 2) 1 }} </div> {{ end }}
+    {{ end }}
+    {{ if mod (len $latestPosts) 2 }} </div> {{ end }}
   </div>
+</div>
