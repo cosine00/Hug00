@@ -6,6 +6,6 @@ title: Home
 
 ---
 <!-- INSERT_latest-posts_HERE -->
----
+
 <!-- INSERT_MEMO_HERE -->
 
