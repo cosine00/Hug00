@@ -7,7 +7,7 @@ hideInList: true
   
 ### 关于我
 
-落落vici
+i不i
 
 90后，阿卡林省人，现居深圳。
 
@@ -15,6 +15,7 @@ hideInList: true
 
 眼高手低，愤世嫉俗。无甚爱好，干啥都是三分钟热度，除了爱瞎折腾。
 
+{{< figure "https://img.hux.ink/image/2024/11/202411251051874.jpg" "镜头下的石榴花，家乡的记忆" >}}
 
 ### 近期观影 <small>[🔗](/movies)</small>
 
