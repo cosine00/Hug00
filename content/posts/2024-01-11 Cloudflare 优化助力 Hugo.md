@@ -2,7 +2,6 @@
 title: Cloudflare 优化助力 Hugo
 date: 2024-01-11 14:15:00
 tags:
-  - Log
   - 折腾
 author: 落落vici
 draft: false

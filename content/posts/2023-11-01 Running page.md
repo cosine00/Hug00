@@ -1,7 +1,6 @@
 ---
 title: Running page
 tags:
-  - Log
   - 折腾
 date: 2023-11-01 11:58:14
 author: 落落vici

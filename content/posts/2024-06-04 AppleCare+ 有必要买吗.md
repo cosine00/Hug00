@@ -2,7 +2,7 @@
 title: AppleCare+ 有必要买吗
 date: 2024-06-04 17:01:42
 tags:
-  - Log
+  - 无穷事
 author: 落落vici
 draft: false
 slug: AppleCare+

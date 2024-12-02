@@ -2,8 +2,8 @@
 title: Workout page
 date: 2024-03-20 16:30:08
 tags:
-  - Log
   - 折腾
+  - 人间流浪
 author: 落落vici
 draft: false
 slug: workoutpage
