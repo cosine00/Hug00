@@ -3,7 +3,7 @@ title: Hello,Hugo~
 author: 落落vici
 date: 2023-01-01 21:00:00
 tags:
-  - Log
+  - 折腾
 slug: hello-hugo
 draft: false
 ---

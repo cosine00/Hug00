@@ -2,7 +2,7 @@
 title: 在Obsidian中写Hugo博客发布
 author: 落落vici
 tags:
-  - Log
+  - 折腾
 date: 2023-04-02 17:45:06
 draft: false
 hideInList: false
